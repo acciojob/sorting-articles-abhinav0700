@@ -19,7 +19,7 @@ function stripp(inp) {
 	return inp.replace(/^(a|an|the)/i,'').trim();	
 };
 
-const sorted_bands = band.sort((a,b)=>{
+const sorted_bands = bands.sort((a,b)=>{
 	return stripp(a).localeCompare(stripp(b));
 });
 
