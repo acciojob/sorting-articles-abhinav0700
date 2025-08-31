@@ -16,10 +16,10 @@ const bands = [
     ];
 
 function stripp(inp) {
-	return inp.replace(/(a|an|the)/g,'').trim();	
+	return inp.replace(/^(a|an|the)/i,'').trim();	
 };
 
-cost sorted_bands = bands.sort((a,b)=>{
+const sorted_bands = band.sort((a,b)=>{
 	return stripp(a).localeCompare(stripp(b));
 });
 
